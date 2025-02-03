@@ -10,7 +10,7 @@ interface TaskFormProps {
 
 export default function TaskForm({ groupId }: TaskFormProps) {
   const [title, setTitle] = useState("");
-  const [error, setError] = useState<string | null>(null);
+  const [, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
